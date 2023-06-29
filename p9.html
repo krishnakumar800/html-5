@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>This is CANVAS TAG</h1>
+        <p>
+            The HTML canvas elements provides HTML a bitmaps surface to work with.
+            It is used to draw graphics on the webpage.
+            The <b>HTML 5 canvas tag </b>is used to draw graphics using scripting language lile Javascript
+        </p>
+    </center>
+    <hr>
+    <canvas>This is First Canvas Tag</canvas>
+    <canvas id="myCanvas" width="200px" height="100px" style="border:2px solid red;"></canvas>
+    <p><b>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In dolores, error alias deleniti ratione vero, dicta magnam illum eos vel doloremque quis ipsam hic perspiciatis molestiae architecto earum dolorem necessitatibus?</b></p>
+    <hr>
+    <canvas id="myCanvas" width="250" height="150" style="border:2px solid blue;"></canvas>
+    <script>
+        let canvas3 = document.getElementById("myCanvas").getContext("2d");
+        canvas3.fillStyle = "red";
+        canvas3.fillRect(25,25,200,100);
+    </script>
+    <hr>
+    <center>
+        <h3> Drawing Circle on Canvas</h3>
+    </center>
+    <canvas id="myCanvasCircle" width="200" height="200" style="border:1px solid green;"></canvas>
+    <script>
+        let myCanvasCircle = document.getElementById("myCanvasCircle").getContext("2d");
+        myCanvasCircle.fillStyle = "red";
+        myCanvasCircle.arc(100,100, 90, 0, 2*Math.PI)
+        myCanvasCircle.fill();
+        myCanvasCircle.stroke();
+    </script>
+    <center>
+        <h3>Drawing text on canvas</h3>
+    </center>
+    <canvas id="myCanvas" width="578" height="200" style="border:1px solid teal;"></canvas>
+    <script>
+        let myCanvas= document.getElementById("myCanvas").getContext("2d");
+        myCanvas.font = '40pt Times New Roman';
+        myCanvas.fillStyle = "blue";
+        myCanvas.fillText('Hello HTML',150,100);
+    </script>
+
+   
+</body>
+</html>
